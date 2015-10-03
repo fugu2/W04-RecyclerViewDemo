@@ -32,14 +32,6 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.textView.setText(" (" + module.getCode() + ")");
         holder.checkBox.setText(module.getName());
         holder.checkBox.setChecked(module.isSelected());
-
-        holder.parent.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                remove(module);
-                return true;
-            }
-        });
     }
 
     @Override
